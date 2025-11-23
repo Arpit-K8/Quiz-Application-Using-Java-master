@@ -2,7 +2,7 @@
 
 A modern, interactive Java-based quiz application with an enhanced graphical user interface.
 
-## 🎨 GUI Improvements Made
+##  GUI Improvements Made
 
 ### 1. **Modern Design & Styling**
 - **Gradient Backgrounds**: Beautiful blue gradient backgrounds throughout the application
@@ -37,7 +37,7 @@ A modern, interactive Java-based quiz application with an enhanced graphical use
 - **Timer Warnings**: Visual and color-coded timer warnings as time runs out
 - **Auto-advance**: Automatic progression when time expires
 
-## 🚀 Features
+##  Features
 
 ### **Core Functionality**
 - **10 Multiple-Choice Questions**: Java programming questions
@@ -51,7 +51,7 @@ A modern, interactive Java-based quiz application with an enhanced graphical use
 - **Auto-advance**: Automatically moves to next question when time expires
 - **Keyboard Shortcuts**: Enter key support for quick navigation
 
-## 🎨 Screen Features
+##  Screen Features
 
 ### **Login Screen**
 - Modern gradient background
@@ -88,7 +88,7 @@ A modern, interactive Java-based quiz application with an enhanced graphical use
 - Detailed results with percentage and questions answered
 - Integrated results screen (shown directly after quiz completion)
 
-## 🛠️ Technical Improvements
+##  Technical Improvements
 
 - **Java Swing**: Enhanced with modern styling techniques
 - **Graphics2D**: Custom painting for gradients and rounded shapes
@@ -99,7 +99,7 @@ A modern, interactive Java-based quiz application with an enhanced graphical use
 - **Randomization**: Fisher-Yates shuffle algorithm for question randomization
 - **State Management**: Proper handling of quiz state, score, and user answers
 
-## 🎯 How to Run
+##  How to Run
 
 1. **Compile the Java files**:
    ```bash
@@ -120,7 +120,7 @@ A modern, interactive Java-based quiz application with an enhanced graphical use
    
    **Note**: The normal flow is Login → Rules → Quiz → Results. The Quiz class shows results directly after completion. The Score class is a standalone component that can be used separately if needed.
 
-## 🎨 Color Palette Used
+##  Color Palette Used
 
 - **Primary Blue**: `#4682B4` (Steel Blue)
 - **Dark Blue**: `#191970` (Midnight Blue)
@@ -130,14 +130,14 @@ A modern, interactive Java-based quiz application with an enhanced graphical use
 - **Info Blue**: `#3498DB` (Blue)
 - **Purple**: `#9B59B6` (Amethyst)
 
-## 📱 System Requirements
+##  System Requirements
 
 - **Java**: JDK 8 or higher
 - **Operating System**: Windows, macOS, or Linux
 - **Memory**: Minimum 512MB RAM
 - **Display**: 1024x768 or higher resolution
 
-## 🔧 Customization
+##  Customization
 
 The application can be easily customized by modifying:
 - Color schemes in the gradient definitions
@@ -146,7 +146,7 @@ The application can be easily customized by modifying:
 - Panel layouts and positioning
 - Background images and overlays
 
-## 📝 Notes
+##  Notes
 
 - All GUI improvements maintain the original functionality
 - Enhanced visual appeal without compromising performance
