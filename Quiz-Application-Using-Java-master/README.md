@@ -28,17 +28,36 @@ A modern, interactive Java-based quiz application with an enhanced graphical use
 - **Professional Borders**: Subtle borders and shadows for depth
 
 ### 5. **User Experience Improvements**
-- **Input Validation**: Name validation before proceeding
+- **Input Validation**: Name validation before proceeding (letters and spaces only)
 - **Confirmation Dialogs**: Exit confirmation dialog
-- **Better Feedback**: Performance-based messages and color coding
-- **Improved Navigation**: Better button placement and sizing
+- **Better Feedback**: Performance-based messages, color coding, and immediate answer feedback
+- **Improved Navigation**: Better button placement, sizing, and keyboard shortcuts
+- **Pause/Resume**: Ability to pause the quiz at any time
+- **Progress Tracking**: Visual progress bar with percentage completion
+- **Timer Warnings**: Visual and color-coded timer warnings as time runs out
+- **Auto-advance**: Automatic progression when time expires
 
 ## 🚀 Features
+
+### **Core Functionality**
+- **10 Multiple-Choice Questions**: Java programming questions
+- **15-Second Timer**: Per question with visual warnings
+- **Scoring System**: 10 points per correct answer (100 points total)
+- **50-50 Lifeline**: Remove two incorrect options (one-time use)
+- **Question Randomization**: Questions appear in random order each session
+- **Pause/Resume**: Pause the quiz at any time
+- **Immediate Feedback**: See if your answer is correct immediately after submitting
+- **Progress Tracking**: Visual progress bar showing completion percentage
+- **Auto-advance**: Automatically moves to next question when time expires
+- **Keyboard Shortcuts**: Enter key support for quick navigation
+
+## 🎨 Screen Features
 
 ### **Login Screen**
 - Modern gradient background
 - Professional input field styling
-- Validation for empty names
+- Validation for empty names and invalid characters (letters and spaces only)
+- Enter key support for quick navigation
 - Exit confirmation dialog
 
 ### **Rules Screen**
@@ -46,11 +65,18 @@ A modern, interactive Java-based quiz application with an enhanced graphical use
 - Modern card-style layout
 - Improved readability with HTML formatting
 - Professional button styling
+- Keyboard shortcuts (Enter to start, Escape to go back)
 
 ### **Quiz Interface**
 - Large, clear question display
-- Styled radio button options
-- Modern timer display
+- Styled radio button options with hover effects
+- Modern timer display with visual warnings (color changes and blinking when time is running out)
+- Progress bar showing completion percentage
+- Real-time score tracking
+- Pause/Resume functionality
+- Immediate feedback on answers (shows correct/incorrect after each question)
+- Auto-advance on timeout
+- Question randomization for each session
 - Better organized button layout
 - Enhanced visual hierarchy
 
@@ -59,14 +85,19 @@ A modern, interactive Java-based quiz application with an enhanced graphical use
 - Color-coded score display
 - Modern card-style score panel
 - Encouraging messages based on performance
+- Detailed results with percentage and questions answered
+- Integrated results screen (shown directly after quiz completion)
 
 ## 🛠️ Technical Improvements
 
 - **Java Swing**: Enhanced with modern styling techniques
 - **Graphics2D**: Custom painting for gradients and rounded shapes
-- **Event Handling**: Improved user interaction
-- **Layout Management**: Better component organization
+- **Event Handling**: Improved user interaction with keyboard and mouse events
+- **Layout Management**: Better component organization using null layout for precise positioning
 - **Responsive Design**: Better window positioning and sizing
+- **Timer Management**: Swing Timer for countdown with pause/resume functionality
+- **Randomization**: Fisher-Yates shuffle algorithm for question randomization
+- **State Management**: Proper handling of quiz state, score, and user answers
 
 ## 🎯 How to Run
 
@@ -80,12 +111,14 @@ A modern, interactive Java-based quiz application with an enhanced graphical use
    java -cp src quiz.application.Login
    ```
 
-3. **Or run individual screens**:
+3. **Or run individual screens** (for testing):
    ```bash
    java -cp src quiz.application.Rules "Your Name"
    java -cp src quiz.application.Quiz "Your Name"
    java -cp src quiz.application.Score "Your Name" 85
    ```
+   
+   **Note**: The normal flow is Login → Rules → Quiz → Results. The Quiz class shows results directly after completion. The Score class is a standalone component that can be used separately if needed.
 
 ## 🎨 Color Palette Used
 
@@ -119,6 +152,11 @@ The application can be easily customized by modifying:
 - Enhanced visual appeal without compromising performance
 - Modern design principles applied throughout
 - Better accessibility with improved contrast and readability
+- Results are displayed directly in the Quiz class after completion
+- The Score class is available as a standalone component but is not used in the main flow
+- Timer provides visual feedback: normal (red), warning (orange at ≤10s), critical (blinking red at ≤5s)
+- All questions are Java programming related
+- Name validation ensures only letters and spaces are accepted
 
 ---
 
